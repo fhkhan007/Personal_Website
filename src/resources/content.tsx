@@ -34,25 +34,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "",
+    link: "https://github.com/fhkhan007",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://github.com/fhkhan007",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/fhkhan007/",
     essential: true,
   },
   {
@@ -69,7 +57,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Hello</>,
   featured: {
     display: true,
     title: (
@@ -85,12 +73,12 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Text as="span" size="xl" weight="strong">
-        ONCE UI
-      </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my
-      own projects.
+      I'm Md. Fahad Hossain, a{" "}
+<Text as="span" size="xl" weight="strong">
+  Full-Stack Developer
+</Text>
+, passionate about building modern web applications with React, Node.js, and PostgreSQL. <br />
+I enjoy creating clean and user-friendly experiences, and in my free time I build personal projects to sharpen my skills.
     </>
   ),
 };
@@ -116,10 +104,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Md. Fahad Hossain is a full-stack developer who builds web applications
+    and enjoys learning new technologies.
       </>
     ),
   },
