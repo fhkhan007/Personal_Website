@@ -104,7 +104,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Md. Fahad Hossain is a full-stack developer who builds web applications
+        Md. Fahad Hossain is a Full-stack developer who builds web applications
     and enjoys learning new technologies.
       </>
     ),
