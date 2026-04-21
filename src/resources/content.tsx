@@ -6,7 +6,6 @@ import {
   Newsletter,
   Person,
   Social,
-  Work,
 } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
@@ -58,19 +57,6 @@ const home: Home = {
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Hello</>,
-  featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
   subline: (
     <>
       I'm Md. Fahad Hossain, a{" "}
