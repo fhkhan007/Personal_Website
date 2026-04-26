@@ -52,6 +52,11 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
+  featured: {
+    display: true,
+    title: "Featured", // or any title you want
+    href: "/", // or wherever you want it to link
+  },
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
@@ -60,17 +65,24 @@ const home: Home = {
   subline: (
     <>
       I'm Md. Fahad Hossain, a{" "}
-<Text as="span" size="xl" weight="strong">
-  Full-Stack Developer
-</Text>
-, passionate about building modern web applications with React, Node.js, and PostgreSQL. <br />
-I enjoy creating clean and user-friendly experiences, and in my free time I build personal projects to sharpen my skills.
+      <Text as="span" size="xl" weight="strong">
+        Full-Stack Developer
+      </Text>
+      , passionate about building modern web applications with React, Node.js,
+      and PostgreSQL. <br />I enjoy creating clean and user-friendly
+      experiences, and in my free time I build personal projects to sharpen my
+      skills.
     </>
   ),
 };
 
 const about: About = {
   path: "/about",
+  work: {
+    display: true,
+    title: "Work Experience", // or "Experience", "My Journey", etc.
+    experiences: [], // ← You need to provide an array of experiences
+  },
   label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
@@ -91,11 +103,11 @@ const about: About = {
     description: (
       <>
         Md. Fahad Hossain is a Full-stack developer who builds web applications
-    and enjoys learning new technologies.
+        and enjoys learning new technologies.
       </>
     ),
   },
-  
+
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
@@ -122,9 +134,7 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          
-        ],
+        images: [],
       },
       {
         title: "Next.js",
@@ -146,9 +156,7 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          
-        ],
+        images: [],
       },
     ],
   },
@@ -163,12 +171,22 @@ const blog: Blog = {
   // All posts will be listed on the /blog route
 };
 
-const work: Work = {
+// const work: Work = {
+//   path: "/work",
+//   label: "Work",
+//   title: `Projects – ${person.name}`,
+//   description: `Design and dev projects by ${person.name}`,
+//   // Create new project pages by adding a new .mdx file to app/blog/posts
+//   // All projects will be listed on the /home and /work routes
+// };
+
+const work = {
   path: "/work",
   label: "Work",
-  title: `Projects – ${person.name}`,
+  title: `Projects ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // Comment remains helpful:
+  // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
 
